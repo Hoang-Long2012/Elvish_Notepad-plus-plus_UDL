@@ -30,4 +30,4 @@ Open [`samples/Elvish_byHoangLong.elv`](samples/Elvish_byHoangLong.elv) to see a
 
 ## License
 
-No license file is currently included. Contact the repository owner before reusing or redistributing this work.
+This project is licensed under the [MIT License](LICENSE).
