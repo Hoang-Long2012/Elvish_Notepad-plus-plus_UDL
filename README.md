@@ -13,16 +13,12 @@ User Defined Language (UDL) files and related configuration for editing [Elvish]
 
 ### CollectionInterface plugin
 
-The CollectionInterface plugin installs UDLs listed in the official [Notepad++ User Defined Languages Collection](https://github.com/notepad-plus-plus/userDefinedLanguages). To install Elvish this way, this UDL must first be accepted into that collection; it is not listed there yet.
-
-Once Elvish is available in the collection:
+The CollectionInterface plugin installs UDLs from the official [Notepad++ User Defined Languages Collection](https://github.com/notepad-plus-plus/userDefinedLanguages). After the Elvish entry is available there, install it as follows:
 
 1. In Notepad++ 8.8.1 or newer, open **Plugins > Plugins Admin**, find **CollectionInterface**, select it, and click **Install**.
 2. Restart Notepad++, then open **Plugins > CollectionInterface > CollectionInterface: Download**.
 3. In the **UDL** tab, select **Elvish**. Select the associated AutoCompletion and FunctionList options if offered.
 4. Click **Download**, wait for it to finish, then restart Notepad++ when prompted.
-
-For details on adding a UDL to the official collection, see its [contribution guide](https://github.com/notepad-plus-plus/userDefinedLanguages/blob/master/CONTRIBUTING.md).
 
 ### Manual install
 
