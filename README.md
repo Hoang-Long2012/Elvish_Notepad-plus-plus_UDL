@@ -15,6 +15,13 @@ User Defined Language (UDL) files and related configuration for editing [Elvish]
 
 Use the repository installer script to copy the required files into the correct Notepad++ locations on Windows.
 
+The installer handles these component locations:
+
+- UDL file: `%APPDATA%\Notepad++\userDefineLangs\`
+- AutoCompletion file: `[Notepad++ install directory]\autoCompletion\`
+- FunctionList file: `%APPDATA%\Notepad++\functionList\`
+- FunctionList mapping: `%APPDATA%\Notepad++\functionList\overrideMap.xml`
+
 1. Open PowerShell in the repository folder.
 2. Run:
 
@@ -22,7 +29,7 @@ Use the repository installer script to copy the required files into the correct 
 .\install.ps1
 ```
 
-3. The script will prompt for each component:
+3. The script prompts for each component:
    - UDL file
    - AutoCompletion file
    - FunctionList file
@@ -30,7 +37,7 @@ Use the repository installer script to copy the required files into the correct 
 4. Press `Y` to install a component or `N` to skip it.
 5. If a component is skipped, the installer continues with the remaining components.
 6. A summary is shown at the end with the final status for each component.
-7. Exit code `0` means the installer completed successfully without any failed component installation. Exit code `1` means at least one selected component failed to install.
+7. Exit code `0` means the installer completed without any failed selected installation. Exit code `1` means at least one selected component failed to install.
 
 If Notepad++ is not detected automatically, pass the installation directory explicitly:
 
@@ -54,8 +61,8 @@ After the Elvish entry is available there, install it as follows:
 1. In Notepad++, open **Language > User Defined Language > Define your language...**.
 2. Select **Import...** and choose [`UDLs/Elvish_byHoangLong.xml`](UDLs/Elvish_byHoangLong.xml).
 3. Restart Notepad++ if needed, then open an `.elv` file. Choose **Language > Elvish** if it is not selected automatically.
-4. To enable autocompletion, copy [`autoCompletion/Elvish.xml`](autoCompletion/Elvish.xml) into Notepad++'s `autoCompletion` folder and restart Notepad++.
-5. To enable the Function List parser, add [`functionList/Elvish_byHoangLong.xml`](functionList/Elvish_byHoangLong.xml) to the Function List parser configuration, then restart Notepad++.
+4. To enable autocompletion, copy [`autoCompletion/Elvish.xml`](autoCompletion/Elvish.xml) into the Notepad++ installation directory's `autoCompletion` folder and restart Notepad++.
+5. To enable the Function List parser, copy [`functionList/Elvish_byHoangLong.xml`](functionList/Elvish_byHoangLong.xml) into `%APPDATA%\Notepad++\functionList\` and update `%APPDATA%\Notepad++\functionList\overrideMap.xml` so the `Elvish` language is mapped to `Elvish_byHoangLong.xml`, then restart Notepad++.
 
 Open [`UDL-samples/Elvish_byHoangLong.elv`](UDL-samples/Elvish_byHoangLong.elv) to see a small example.
 
