@@ -11,6 +11,33 @@ User Defined Language (UDL) files and related configuration for editing [Elvish]
 
 ## Install
 
+### Windows PowerShell installer
+
+Use the repository installer script to copy the required files into the correct Notepad++ locations on Windows.
+
+1. Open PowerShell in the repository folder.
+2. Run:
+
+```powershell
+.\install.ps1
+```
+
+3. The script will prompt for each component:
+   - UDL file
+   - AutoCompletion file
+   - FunctionList file
+
+4. Press `Y` to install a component or `N` to skip it.
+5. If a component is skipped, the installer continues with the remaining components.
+6. A summary is shown at the end with the final status for each component.
+7. Exit code `0` means the installer completed successfully without any failed component installation. Exit code `1` means at least one selected component failed to install.
+
+If Notepad++ is not detected automatically, pass the installation directory explicitly:
+
+```powershell
+.\install.ps1 -NotepadPlusPlusPath "C:\Program Files\Notepad++"
+```
+
 ### CollectionInterface plugin
 
 The CollectionInterface plugin installs UDLs from the official [Notepad++ User Defined Languages Collection](https://github.com/notepad-plus-plus/userDefinedLanguages).
